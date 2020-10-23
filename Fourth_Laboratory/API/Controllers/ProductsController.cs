@@ -32,8 +32,11 @@ namespace API.Controllers
             return _context.Products.Find(id);
         }
 
+<<<<<<< HEAD
         [Route("Sum")]
 
+=======
+>>>>>>> cb40a3176b75be9f35bd39e6b7144270bc75e2a8
         public ActionResult<double> Sum() 
         {
             double sum = 0;
