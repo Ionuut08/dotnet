@@ -24,6 +24,7 @@ namespace API
             services.AddDbContext<DataContext>(options=>{
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddControllers();
         }
 

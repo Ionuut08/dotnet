@@ -1,3 +1,6 @@
+using API.Entities;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 namespace API.Data
 {
     public class ProductRepository : IProductRepository
@@ -12,7 +15,12 @@ namespace API.Data
         public void Create(Product product) 
         {
             _context.Add(product);
-            _context.Save(SaveChanges);
+            _context.SaveChanges();
+        }
+
+        public Product GetById(int id)
+        {
+            return _context.Products.Find(id);
         }
 
         public void Update(Product product)
@@ -24,7 +32,7 @@ namespace API.Data
 // a.	Return all products from database
         public IEnumerable<Product> GetAll()
         {
-            return _context.Products.Find(id);
+            return _context.Products;
         }
 
         public void Remove(Product product)
@@ -33,19 +41,5 @@ namespace API.Data
             _context.SaveChanges();
         }
 
-        [Route("ProductsGreaterThan {price}")]
-        public ActionResult<List<Product>> ProductsGreaterThan(double price)
-        {
-            List<Product> productGreaterThanPrice = new List<Product>();
-
-            foreach (Product product in _context.Products)
-            {
-                if (product.Price > price)
-                {
-                    productGreaterThanPrice.Add(product);
-                }
-            }
-            return productGreaterThanPrice.ToList();
-        }
     }
 }

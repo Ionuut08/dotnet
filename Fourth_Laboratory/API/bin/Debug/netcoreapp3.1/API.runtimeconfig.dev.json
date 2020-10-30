@@ -1,9 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\ionut\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ionut\\.nuget\\packages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\TaVi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TaVi\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
 }

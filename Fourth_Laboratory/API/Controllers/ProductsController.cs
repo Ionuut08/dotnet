@@ -23,12 +23,26 @@ namespace API.Controllers
         [HttpGet("{id}", Name = "GetById")]
         public ActionResult<Product> GetById(int id) => _repository.GetById(id);
 
+        [Route("ValidSum")]
+        public ActionResult<double> ValidSum()
+        {
+            DateTime today = DateTime.Today;
+            double sum = 0;
+            foreach (Product product in _repository.GetAll())
+            {
+                if (product.ValidTo < today)
+                {
+                    sum = sum + product.Price;
+                }
+            }
+            return sum;
+        }
 
         [Route("Sum")]
         public ActionResult<double> Sum() 
         {
             double sum = 0;
-            foreach (Product product in _context.Products) 
+            foreach (Product product in _repository.GetAll()) 
             {
                 sum = sum + product.Price;
             }
@@ -41,7 +55,7 @@ namespace API.Controllers
             DateTime today = DateTime.Today;
             List<Product> validProducts = new List<Product>();
 
-            foreach (Product product in _context.Products) 
+            foreach (Product product in _repository.GetAll()) 
             {
                 if (product.ValidTo < today) 
                 {
@@ -51,19 +65,50 @@ namespace API.Controllers
             return validProducts.ToList();
         }
 
-        [Route("ValidSum")]
-        public ActionResult<double> ValidSum() 
+        [Route("ProductsGreaterThan{price}")]
+        public ActionResult<List<Product>> ProductsGreaterThan(double price)
         {
-            DateTime today = DateTime.Today;
-            double sum = 0;
-            foreach (Product product in _context.Products) 
+            List<Product> productGreaterThanPrice = new List<Product>();
+
+            foreach (Product product in _repository.GetAll())
             {
-                if (product.ValidTo < today) 
+                if (product.Price > price)
                 {
-                    sum = sum + product.Price;
+                    productGreaterThanPrice.Add(product);
                 }
             }
-            return sum;
+            return productGreaterThanPrice.ToList();
         }
+
+        [Route("ProductsInRange{price1}-{price2}")]
+        public ActionResult<List<Product>> ProductsInRange(double price1, double price2)
+        {
+            List<Product> productGreaterThanPrice = new List<Product>();
+
+            foreach (Product product in _repository.GetAll())
+            {
+                if (product.Price > price1 && product.Price <= price2)
+                {
+                    productGreaterThanPrice.Add(product);
+                }
+            }
+            return productGreaterThanPrice.ToList();
+        }
+
+
+        [Route("Remove{id}")]
+        public void Remove(int id)
+        {
+            _repository.Remove(_repository.GetById(id));
+        }
+
+
+        [Route("Update{id}Price{price}")]
+        public void Update(int id, int price)
+        {
+            _repository.GetById(id).Price = price;
+            _repository.SaveChanges();
+        }
+
     }
 }
