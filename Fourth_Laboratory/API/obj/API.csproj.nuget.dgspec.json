@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ionut\\Documents\\Anul_III\\Semestrul_I\\Introducere_in_NET\\Laboratories\\Fourth_Laboratory\\API\\API.csproj": {}
+    "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\Fourth_Laboratory\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ionut\\Documents\\Anul_III\\Semestrul_I\\Introducere_in_NET\\Laboratories\\Fourth_Laboratory\\API\\API.csproj": {
+    "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\Fourth_Laboratory\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ionut\\Documents\\Anul_III\\Semestrul_I\\Introducere_in_NET\\Laboratories\\Fourth_Laboratory\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\Fourth_Laboratory\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\ionut\\Documents\\Anul_III\\Semestrul_I\\Introducere_in_NET\\Laboratories\\Fourth_Laboratory\\API\\API.csproj",
+        "projectPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\Fourth_Laboratory\\API\\API.csproj",
         "packagesPath": "C:\\Users\\ionut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ionut\\Documents\\Anul_III\\Semestrul_I\\Introducere_in_NET\\Laboratories\\Fourth_Laboratory\\API\\obj\\",
+        "outputPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\Fourth_Laboratory\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

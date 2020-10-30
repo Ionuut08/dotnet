@@ -11,29 +11,20 @@ namespace API.Controllers
     [Route("api/products")]
     public class ProductsController : ControllerBase
     {
-        private readonly DataContext _context;
-        public ProductsController(DataContext context)
+        private readonly IProductRepository _repository;
+        public ProductsController(IProductRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
-
 
         [HttpGet]
+        public ActionResult<List<Product>> Get() => _repository.GetAll().ToList();
 
-        public ActionResult<IEnumerable<Product>> Get() 
-        {
-            return _context.Products.ToList();
-        }
+        [HttpGet("{id}", Name = "GetById")]
+        public ActionResult<Product> GetById(int id) => _repository.GetById(id);
 
-        [HttpGet("{id}")]
-
-        public ActionResult<Product> Get(int id) 
-        {
-            return _context.Products.Find(id);
-        }
 
         [Route("Sum")]
-        
         public ActionResult<double> Sum() 
         {
             double sum = 0;
@@ -45,7 +36,6 @@ namespace API.Controllers
         }
 
         [Route("ValidProducts")]
-
         public ActionResult<List<Product>> ValidProducts() 
         {
             DateTime today = DateTime.Today;
@@ -62,7 +52,6 @@ namespace API.Controllers
         }
 
         [Route("ValidSum")]
-
         public ActionResult<double> ValidSum() 
         {
             DateTime today = DateTime.Today;

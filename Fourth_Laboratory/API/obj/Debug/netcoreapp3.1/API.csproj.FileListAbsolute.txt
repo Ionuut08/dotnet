@@ -59,3 +59,10 @@ C:\Users\ionut\Documents\Anul_III\Semestrul_I\Introducere_in_NET\Laboratories\Fo
 C:\Users\ionut\Documents\Anul_III\Semestrul_I\Introducere_in_NET\Laboratories\Fourth_Laboratory\API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\ionut\Documents\Anul_III\Semestrul_I\Introducere_in_NET\Laboratories\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.csproj.CopyComplete
 C:\Users\ionut\Documents\Anul_III\Semestrul_I\Introducere_in_NET\Laboratories\Fourth_Laboratory\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.csprojAssemblyReference.cache
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.dll
+C:\Users\ionut\OneDrive\Desktop\DotNet\dotnet\Fourth_Laboratory\API\obj\Debug\netcoreapp3.1\API.pdb
