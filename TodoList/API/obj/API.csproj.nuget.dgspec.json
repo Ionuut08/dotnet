@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ionut\\OneDrive\\Desktop\\TodoList\\API\\API.csproj": {}
+    "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\TodoList\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ionut\\OneDrive\\Desktop\\TodoList\\API\\API.csproj": {
+    "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\TodoList\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ionut\\OneDrive\\Desktop\\TodoList\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\TodoList\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\TodoList\\API\\API.csproj",
+        "projectPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\TodoList\\API\\API.csproj",
         "packagesPath": "C:\\Users\\ionut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\TodoList\\API\\obj\\",
+        "outputPath": "C:\\Users\\ionut\\OneDrive\\Desktop\\DotNet\\dotnet\\TodoList\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -45,6 +45,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc.2.20475.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"

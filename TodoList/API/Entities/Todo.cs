@@ -6,8 +6,8 @@ namespace API.Entities
 
         public string Description { get; set; }
 
-        public boolean Created { get; set; }
+        public bool Created { get; set; }
 
-        public boolean IsDone { get; set; }
+        public bool IsDone { get; set; }
     }
 }
