@@ -29,7 +29,6 @@ namespace API.Controllers
             _repository.Remove(_repository.GetById(id));
         }
 
-
         [Route("Update{id}")]
         public void Update(int id)
         {
